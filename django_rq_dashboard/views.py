@@ -5,7 +5,7 @@ from itertools import groupby
 
 from django.contrib import messages
 from django.conf import settings
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.http import Http404, HttpResponse
 from django.shortcuts import redirect
 from django.utils import timezone
