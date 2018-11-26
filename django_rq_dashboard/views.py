@@ -78,7 +78,7 @@ def serialize_scheduled_queues(queue):
 
 class SuperUserMixin(object):
     def dispatch(self, request, *args, **kwargs):
-        if not request.user.is_authenticated():
+        if not request.user.is_authenticated:
             return redirect('{}?{}'.format(reverse('admin:login'),
                                            urlencode({
                                                'next': reverse('rq_stats')
